@@ -5,37 +5,37 @@
 模拟数据在 ```/src/mock/router.js```
 大致格式如何：
 ```
-	[
-		{
-            "path": "/components",
-            "name": "components",
+[
+	{
+        "path": "/components",
+        "name": "components",
+        "meta": {
+          "icon": "logo-buffer",
+          "title": "组件"
+        },
+        "component": "Main",
+        "children": [
+          {
+            "path": "markdown_page",
+            "name": "markdown_page",
             "meta": {
-              "icon": "logo-buffer",
-              "title": "组件"
+              "icon": "logo-markdown",
+              "title": "Markdown编辑器"
             },
-            "component": "Main",
-            "children": [
-              {
-                "path": "markdown_page",
-                "name": "markdown_page",
-                "meta": {
-                  "icon": "logo-markdown",
-                  "title": "Markdown编辑器"
-                },
-                "component": "Markdown"
-              },
-              {
-                "path": "editor_page",
-                "name": "editor_page",
-                "meta": {
-                  "icon": "ios-create",
-                  "title": "富文本编辑器"
-                },
-                "component": "Editor"
-              }
-            ]
-        }
-    ]
+            "component": "Markdown"
+          },
+          {
+            "path": "editor_page",
+            "name": "editor_page",
+            "meta": {
+              "icon": "ios-create",
+              "title": "富文本编辑器"
+            },
+            "component": "Editor"
+          }
+        ]
+    }
+]
 ```
 
 ## 基于版本：v2.0-beta.4
